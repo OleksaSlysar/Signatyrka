@@ -31,6 +31,7 @@
             button1 = new Button();
             textBox1 = new TextBox();
             pictureBox1 = new PictureBox();
+            userControl11 = new UserControl1();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,6 +43,7 @@
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
@@ -58,11 +60,19 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
+            // userControl11
+            // 
+            userControl11.Location = new Point(772, 209);
+            userControl11.Name = "userControl11";
+            userControl11.Size = new Size(8, 8);
+            userControl11.TabIndex = 3;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(923, 501);
+            Controls.Add(userControl11);
             Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(button1);
@@ -78,5 +88,6 @@
         private Button button1;
         private TextBox textBox1;
         private PictureBox pictureBox1;
+        private UserControl1 userControl11;
     }
 }
