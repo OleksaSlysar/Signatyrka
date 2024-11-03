@@ -30,6 +30,8 @@
         {
             button1 = new Button();
             textBox1 = new TextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -48,15 +50,25 @@
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(920, 62);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(923, 501);
+            Controls.Add(pictureBox1);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -65,5 +77,6 @@
 
         private Button button1;
         private TextBox textBox1;
+        private PictureBox pictureBox1;
     }
 }
