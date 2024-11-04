@@ -35,6 +35,27 @@ namespace Signatyrka
         public Form1()
         {
             InitializeComponent();
+            countDownTimer.Enabled = true;
+            playerChoice = "none";
+            txtTime.Text = "5";
+        }
+
+        private void btnRock_Click(object sender, EventArgs e)
+        {
+            picPlayer.Image = Properties.Resources.rock;
+            playerChoice = "rock";
+        }
+
+        private void btnPaper_Click(object sender, EventArgs e)
+        {
+            picPlayer.Image = Properties.Resources.paper;
+            playerChoice = "paper";
+        }
+
+        private void btnScissors_Click(object sender, EventArgs e)
+        {
+            picPlayer.Image = Properties.Resources.scissors;
+            playerChoice = "scissor";
         }
     }
 }
