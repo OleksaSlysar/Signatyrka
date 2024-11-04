@@ -57,5 +57,56 @@ namespace Signatyrka
             picPlayer.Image = Properties.Resources.scissors;
             playerChoice = "scissor";
         }
+        private void countDownTimer_Tick(object sender, EventArgs e)
+        {
+            timerPerRound -= 1;
+
+            txtTime.Text = timerPerRound.ToString();
+            roundsText.Text = "Rounds: " + rounds;
+
+            if (timerPerRound < 1)
+            {
+                countDownTimer.Enabled = false;
+                timerPerRound = 6;
+
+                randomNumber = rnd.Next(0, CPUchoiceList.Length);
+
+                CPUchoice = CPUchoiceList[randomNumber];
+
+                switch (CPUchoice)
+                {
+                    case "rock":
+                        picCPU.Image = Properties.Resources.rock;
+                        break;
+                    case "paper":
+                        picCPU.Image = Properties.Resources.paper;
+                        break;
+                    case "scissor":
+                        picCPU.Image = Properties.Resources.scissors;
+                        break;
+                }
+
+
+                if (rounds > 0)
+                {
+                    checkGame();
+                }
+                else
+                {
+                    if (playerwins > AIwins)
+                    {
+                        MessageBox.Show("Player Wins This Game");
+                    }
+                    else
+                    {
+                        MessageBox.Show("CPU Wins This Game");
+                    }
+
+                    gameover = true;
+                }
+
+
+            }
+        }
     }
 }
