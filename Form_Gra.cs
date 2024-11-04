@@ -15,9 +15,16 @@ namespace Signatyrka
         public Form_Gra()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_Gra_Load(object sender, EventArgs e)
         {
 
         }

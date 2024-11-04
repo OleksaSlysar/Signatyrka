@@ -170,6 +170,7 @@
             Controls.Add(pictureBox1);
             Name = "Form_ProProgram";
             Text = "Form_ProProgram";
+            Load += Form_ProProgram_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

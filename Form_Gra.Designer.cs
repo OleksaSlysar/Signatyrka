@@ -174,6 +174,7 @@
             Controls.Add(button1);
             Name = "Form_Gra";
             Text = "Form_Gra";
+            Load += Form_Gra_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

@@ -176,6 +176,7 @@
             Controls.Add(label1);
             Name = "Form_Setting";
             Text = "Form_Setting";
+            Load += Form_Setting_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

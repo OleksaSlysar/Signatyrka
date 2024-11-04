@@ -15,6 +15,13 @@ namespace Signatyrka
         public Form_Peremoga()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void Form_Peremoga_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

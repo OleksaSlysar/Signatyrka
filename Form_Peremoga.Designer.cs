@@ -37,6 +37,7 @@
             ClientSize = new Size(1232, 764);
             Name = "Form_Peremoga";
             Text = "Form_Peremoga";
+            Load += Form_Peremoga_Load;
             ResumeLayout(false);
         }
 

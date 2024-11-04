@@ -15,6 +15,13 @@ namespace Signatyrka
         public Form_Setting()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void Form_Setting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
