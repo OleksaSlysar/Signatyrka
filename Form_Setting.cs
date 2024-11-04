@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Signatyrka
 {
-    public partial class UserControl2 : UserControl
+    public partial class Form_Setting : Form
     {
-        public UserControl2()
+        public Form_Setting()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void Form_Setting_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

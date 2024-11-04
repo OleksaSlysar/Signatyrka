@@ -1,10 +1,23 @@
 namespace Signatyrka
 {
-    public partial class Form1 : Form
+    public partial class Form_menu : Form
     {
-        public Form1()
+        public Form_menu()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Setting settingsForm = new Form_Setting();
+            settingsForm.ShowDialog();
+        }
+
+        private void Form_menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

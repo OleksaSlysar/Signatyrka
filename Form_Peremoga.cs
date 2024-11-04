@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Signatyrka
 {
-    public partial class UserControl1 : UserControl
+    public partial class Form_Peremoga : Form
     {
-        public UserControl1()
+        public Form_Peremoga()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+
+        private void Form_Peremoga_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

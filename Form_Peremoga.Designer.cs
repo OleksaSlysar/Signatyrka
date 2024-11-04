@@ -1,13 +1,13 @@
 ﻿namespace Signatyrka
 {
-    partial class UserControl2
+    partial class Form_Peremoga
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,38 +20,27 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             SuspendLayout();
             // 
-            // button1
-            // 
-            button1.Location = new Point(544, 430);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // UserControl2
+            // Form_Peremoga
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button1);
-            Name = "UserControl2";
-            Size = new Size(1257, 725);
+            ClientSize = new Size(1232, 764);
+            Name = "Form_Peremoga";
+            Text = "Form_Peremoga";
+            Load += Form_Peremoga_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Button button1;
     }
 }
