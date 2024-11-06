@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Signatyrka
 {
-    public partial class UserControl1 : UserControl
+    public partial class Form_ProProgram : Form
     {
-        public UserControl1()
+        public Form_ProProgram()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Signatyrka
 {
-    public partial class UserControl1 : UserControl
+    public partial class Form_Setting : Form
     {
-        public UserControl1()
+        public Form_Setting()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
