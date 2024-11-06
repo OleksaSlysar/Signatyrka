@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Signatyrka
 {
-    public partial class Form1 : Form
+    public partial class Form_menu : Form
     {
         int rounds = 3;
         int timerPerRound = 6;
@@ -107,6 +107,16 @@ namespace Signatyrka
 
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
