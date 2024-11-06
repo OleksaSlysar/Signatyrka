@@ -62,6 +62,7 @@
             b_povernena.TabIndex = 1;
             b_povernena.Text = "Повернутися";
             b_povernena.UseVisualStyleBackColor = true;
+            b_povernena.Click += b_povernena_Click;
             // 
             // pictureBox1
             // 
@@ -156,6 +157,7 @@
             b_SaveSetting.TabIndex = 10;
             b_SaveSetting.Text = "Зберегти";
             b_SaveSetting.UseVisualStyleBackColor = true;
+            b_SaveSetting.Click += b_SaveSetting_Click;
             // 
             // Form_Setting
             // 

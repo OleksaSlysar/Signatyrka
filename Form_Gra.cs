@@ -28,5 +28,12 @@ namespace Signatyrka
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_Setting settingsForm = new Form_Setting();
+            settingsForm.ShowDialog();
+            this.Close();
+        }
     }
 }

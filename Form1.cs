@@ -13,6 +13,7 @@ namespace Signatyrka
         {
             Form_Setting settingsForm = new Form_Setting();
             settingsForm.ShowDialog();
+            this.Close();
         }
 
         private void Form_menu_Load(object sender, EventArgs e)
