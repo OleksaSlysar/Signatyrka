@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Gra));
             b_Povernena = new Button();
             b_Zanovo = new Button();
             label1 = new Label();
@@ -185,7 +184,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImage = Properties.Resources.banner;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Dock = DockStyle.Top;
             pictureBox3.Location = new Point(0, 0);
