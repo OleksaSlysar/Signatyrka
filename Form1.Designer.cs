@@ -82,7 +82,7 @@
             // 
             b_Setting.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             b_Setting.BackColor = Color.Transparent;
-           // b_Setting.BackgroundImage = Properties.Resources._1;
+            b_Setting.BackgroundImage = Properties.Resources._1;
             b_Setting.BackgroundImageLayout = ImageLayout.Stretch;
             b_Setting.Cursor = Cursors.Hand;
             b_Setting.ForeColor = Color.Transparent;
