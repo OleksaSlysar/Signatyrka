@@ -65,7 +65,7 @@
             b_Zanovo.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             b_Zanovo.Font = new Font("Segoe UI", 16.2F);
             b_Zanovo.ImageAlign = ContentAlignment.BottomRight;
-            b_Zanovo.Location = new Point(997, 662);
+            b_Zanovo.Location = new Point(1075, 662);
             b_Zanovo.Name = "b_Zanovo";
             b_Zanovo.Size = new Size(179, 59);
             b_Zanovo.TabIndex = 1;
@@ -77,7 +77,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F);
-            label1.Location = new Point(322, 127);
+            label1.Location = new Point(361, 127);
             label1.Name = "label1";
             label1.Size = new Size(101, 31);
             label1.TabIndex = 2;
@@ -88,7 +88,7 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F);
-            label2.Location = new Point(881, 127);
+            label2.Location = new Point(920, 127);
             label2.Name = "label2";
             label2.Size = new Size(49, 31);
             label2.TabIndex = 3;
@@ -132,8 +132,9 @@
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = Properties.Resources.qq;
             pictureBox1.Location = new Point(182, 161);
+            pictureBox1.MaximumSize = new Size(400, 400);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(352, 279);
+            pictureBox1.Size = new Size(389, 297);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -143,9 +144,10 @@
             // 
             pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.Image = Properties.Resources.qq;
-            pictureBox2.Location = new Point(790, 161);
+            pictureBox2.Location = new Point(829, 161);
+            pictureBox2.MaximumSize = new Size(400, 400);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(354, 279);
+            pictureBox2.Size = new Size(390, 297);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
@@ -155,7 +157,7 @@
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 13.8F);
-            label3.Location = new Point(608, 183);
+            label3.Location = new Point(647, 183);
             label3.Name = "label3";
             label3.Size = new Size(76, 31);
             label3.TabIndex = 9;
@@ -166,7 +168,7 @@
             label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 13.8F);
-            label4.Location = new Point(608, 245);
+            label4.Location = new Point(647, 245);
             label4.Name = "label4";
             label4.Size = new Size(76, 31);
             label4.TabIndex = 10;
@@ -177,7 +179,7 @@
             label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 13.8F);
-            label5.Location = new Point(608, 313);
+            label5.Location = new Point(647, 313);
             label5.Name = "label5";
             label5.Size = new Size(76, 31);
             label5.TabIndex = 11;
@@ -190,7 +192,7 @@
             pictureBox3.Dock = DockStyle.Top;
             pictureBox3.Location = new Point(0, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(1222, 83);
+            pictureBox3.Size = new Size(1300, 83);
             pictureBox3.TabIndex = 12;
             pictureBox3.TabStop = false;
             // 
@@ -198,7 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1222, 753);
+            ClientSize = new Size(1300, 753);
             Controls.Add(pictureBox3);
             Controls.Add(label5);
             Controls.Add(label4);
