@@ -160,6 +160,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Location = new Point(895, 68);
             label4.Margin = new Padding(4, 0, 4, 0);
@@ -167,6 +168,17 @@
             label4.Size = new Size(33, 20);
             label4.TabIndex = 4;
             label4.Text = "Бот";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Dock = DockStyle.Top;
+            pictureBox3.Location = new Point(0, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(1308, 83);
+            pictureBox3.TabIndex = 12;
+            pictureBox3.TabStop = false;
             // 
             // Form_Gra
             // 
