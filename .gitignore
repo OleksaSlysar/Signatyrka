@@ -16,3 +16,4 @@ publish/
 .DS_Store
 Thumbs.db
 *.tmp
+/Form1.resx
