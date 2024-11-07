@@ -23,5 +23,19 @@ namespace Signatyrka
         {
 
         }
+
+        private void b_povernena_Click(object sender, EventArgs e)
+        {
+            Form_menu form_menu = new Form_menu();
+            form_menu.ShowDialog();
+            this.Close();
+        }
+
+        private void b_SaveSetting_Click(object sender, EventArgs e)
+        {
+            Form_Gra GraForm = new Form_Gra();
+            GraForm.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Setting));
             label1 = new Label();
             b_povernena = new Button();
-            pictureBox1 = new PictureBox();
             b_na_dvoh = new Button();
             b_AV = new Button();
             b_AVlegko = new Button();
@@ -39,11 +39,13 @@
             RB_Do3 = new RadioButton();
             RB_Do5 = new RadioButton();
             b_SaveSetting = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -56,23 +58,18 @@
             // b_povernena
             // 
             b_povernena.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            b_povernena.ImageAlign = ContentAlignment.TopLeft;
             b_povernena.Location = new Point(29, 38);
             b_povernena.Name = "b_povernena";
             b_povernena.Size = new Size(223, 62);
             b_povernena.TabIndex = 1;
             b_povernena.Text = "Повернутися";
             b_povernena.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(1113, 1);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 733);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            b_povernena.Click += b_povernena_Click;
             // 
             // b_na_dvoh
             // 
+            b_na_dvoh.Anchor = AnchorStyles.None;
             b_na_dvoh.Font = new Font("Segoe UI", 16.2F);
             b_na_dvoh.Location = new Point(517, 106);
             b_na_dvoh.Name = "b_na_dvoh";
@@ -83,8 +80,9 @@
             // 
             // b_AV
             // 
+            b_AV.Anchor = AnchorStyles.None;
             b_AV.Font = new Font("Segoe UI", 16.2F);
-            b_AV.Location = new Point(517, 321);
+            b_AV.Location = new Point(517, 349);
             b_AV.Name = "b_AV";
             b_AV.Size = new Size(167, 78);
             b_AV.TabIndex = 4;
@@ -93,6 +91,7 @@
             // 
             // b_AVlegko
             // 
+            b_AVlegko.Anchor = AnchorStyles.None;
             b_AVlegko.Font = new Font("Segoe UI", 16.2F);
             b_AVlegko.Location = new Point(277, 303);
             b_AVlegko.Name = "b_AVlegko";
@@ -103,6 +102,7 @@
             // 
             // b_AVvajko
             // 
+            b_AVvajko.Anchor = AnchorStyles.None;
             b_AVvajko.Font = new Font("Segoe UI", 16.2F);
             b_AVvajko.Location = new Point(729, 303);
             b_AVvajko.Name = "b_AVvajko";
@@ -113,9 +113,10 @@
             // 
             // RB_Do1
             // 
+            RB_Do1.Anchor = AnchorStyles.None;
             RB_Do1.AutoSize = true;
             RB_Do1.Font = new Font("Segoe UI", 16.2F);
-            RB_Do1.Location = new Point(484, 178);
+            RB_Do1.Location = new Point(484, 190);
             RB_Do1.Name = "RB_Do1";
             RB_Do1.Size = new Size(227, 42);
             RB_Do1.TabIndex = 7;
@@ -125,9 +126,10 @@
             // 
             // RB_Do3
             // 
+            RB_Do3.Anchor = AnchorStyles.None;
             RB_Do3.AutoSize = true;
             RB_Do3.Font = new Font("Segoe UI", 16.2F);
-            RB_Do3.Location = new Point(484, 273);
+            RB_Do3.Location = new Point(484, 301);
             RB_Do3.Name = "RB_Do3";
             RB_Do3.Size = new Size(227, 42);
             RB_Do3.TabIndex = 8;
@@ -137,9 +139,10 @@
             // 
             // RB_Do5
             // 
+            RB_Do5.Anchor = AnchorStyles.None;
             RB_Do5.AutoSize = true;
             RB_Do5.Font = new Font("Segoe UI", 16.2F);
-            RB_Do5.Location = new Point(484, 393);
+            RB_Do5.Location = new Point(484, 433);
             RB_Do5.Name = "RB_Do5";
             RB_Do5.Size = new Size(227, 42);
             RB_Do5.TabIndex = 9;
@@ -149,6 +152,7 @@
             // 
             // b_SaveSetting
             // 
+            b_SaveSetting.Anchor = AnchorStyles.None;
             b_SaveSetting.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             b_SaveSetting.Location = new Point(484, 532);
             b_SaveSetting.Name = "b_SaveSetting";
@@ -156,6 +160,18 @@
             b_SaveSetting.TabIndex = 10;
             b_SaveSetting.Text = "Зберегти";
             b_SaveSetting.UseVisualStyleBackColor = true;
+            b_SaveSetting.Click += b_SaveSetting_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Dock = DockStyle.Bottom;
+            pictureBox1.Location = new Point(0, 650);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1238, 85);
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // Form_Setting
             // 
@@ -163,6 +179,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1238, 735);
+            Controls.Add(pictureBox1);
             Controls.Add(b_SaveSetting);
             Controls.Add(RB_Do5);
             Controls.Add(RB_Do3);
@@ -171,7 +188,6 @@
             Controls.Add(b_AVlegko);
             Controls.Add(b_AV);
             Controls.Add(b_na_dvoh);
-            Controls.Add(pictureBox1);
             Controls.Add(b_povernena);
             Controls.Add(label1);
             Name = "Form_Setting";
@@ -186,7 +202,6 @@
 
         private Label label1;
         private Button b_povernena;
-        private PictureBox pictureBox1;
         private Button b_na_dvoh;
         private Button b_AV;
         private Button b_AVlegko;
@@ -195,5 +210,6 @@
         private RadioButton RB_Do3;
         private RadioButton RB_Do5;
         private Button b_SaveSetting;
+        private PictureBox pictureBox1;
     }
 }
