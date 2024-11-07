@@ -19,6 +19,8 @@ namespace Signatyrka
         public Form_Gra()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.FormBorderStyle = FormBorderStyle.None;
             countDownTimer.Enabled = true;
             playerChoice = "none";
             txtTime.Text = "5";
