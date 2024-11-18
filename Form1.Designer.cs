@@ -93,6 +93,7 @@
             b_Setting.TabIndex = 4;
             b_Setting.Text = "Вихід";
             b_Setting.UseVisualStyleBackColor = false;
+            b_Setting.Click += b_Setting_Click;
             // 
             // button2
             // 

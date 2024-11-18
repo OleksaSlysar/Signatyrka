@@ -11,14 +11,19 @@ namespace Signatyrka
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form_Setting settingsForm = new Form_Setting();
-            settingsForm.ShowDialog();
+            Form_Gra settingsGra1 = new Form_Gra();
+            settingsGra1.ShowDialog();
             this.Close();
         }
 
         private void Form_menu_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void b_Setting_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
